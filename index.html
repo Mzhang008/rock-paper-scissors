@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
 </head>
-<script src="rps.js"></script>
+
 <h1>Rock Paper Scissors</h1>
 <body>
-    <p>Please view the game results in the browser console, first to 5 wins!</p>
-    <p>Right Click -> Inspect or Ctrl+shift+i to view.</p>
-    <button onclick="game()">Start Game</button>
-</body>
+    <p>Click Start Game to begin/reset score. First to 5 wins!</p>
 
+    <button onclick="game()">Start Game</button>
+    <button playerMove="rock" class="move">Rock</button>
+    <button playerMove="paper" class="move">Paper</button>
+    <button playerMove="scissors" class="move">Scissors</button>
+    <div id="results">Click Start to Begin</div>
+    
+</body>
+<script src="rps.js"></script>
 
 </html>
